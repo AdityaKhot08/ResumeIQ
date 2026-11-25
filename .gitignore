@@ -1,11 +1,37 @@
+# Dependencies
 node_modules/
+**/node_modules/
+
+# Build output
 build/
 dist/
+**/dist/
+.vite/
+
+# Environment & secrets
 .env
-.env.local
-.DS_Store
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local data & uploads
+uploads/
+server/.data/
+*.local
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-uploads/
+*.log
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Coverage
 coverage/
